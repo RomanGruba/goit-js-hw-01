@@ -21,23 +21,27 @@ const countryJamaika = 120;
 
 let userCountry = prompt("Введите страну доставки");
 
+let message;
+
 switch (userCountry.toLowerCase()) {
   case "китай":
-    alert(`Доставка в Китай будет стоить ${countryChina} кредитов.`);
+    message = `Доставка в Китай будет стоить ${countryChina} кредитов.`;
     break;
   case "чили":
-    alert(`Доставка в Чили будет стоить ${countryChile} кредитов.`);
+    message = `Доставка в Чили будет стоить ${countryChile} кредитов.`;
     break;
   case "австралия":
-    alert(`Доставка в Австралию будет стоить ${countryAustralia} кредитов.`);
+    message = `Доставка в Австралию будет стоить ${countryAustralia} кредитов.`;
     break;
   case "индия":
-    alert(`Доставка в Индию будет стоить ${countryIndia} кредитов.`);
+    message = `Доставка в Индию будет стоить ${countryIndia} кредитов.`;
     break;
   case "ямайка":
-    alert(`Доставка в Ямайку будет стоить ${countryJamaika} кредитов.`);
+    message = `Доставка в Ямайку будет стоить ${countryJamaika} кредитов.`;
     break;
 
   default:
-    alert("В вашей стране доставка не доступна.");
+    message = "В вашей стране доставка не доступна.";
 }
+
+alert(message);
